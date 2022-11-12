@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
+- Solution URL: [https://www.frontendmentor.io/solutions/expenses-chart-component-using-html-css-javascript-flex-chartjs-jGB-fatHCa]
 - Live Site URL: [https://genesisgran.github.io/expenses-chart-component/]
 
 ## Built with
