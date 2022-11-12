@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  transition: 150ms ease-out;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+:root {
+  font-size: 18px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-color: hsl(27, 66%, 92%);
+  margin: 0;
+  flex-direction: column;
+  row-gap: 1rem;
+  min-width: 375px;
+  height: 100vh;
+}
+p {
+  margin: 0;
+}
+main {
+  margin: 2rem;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  width: 375px;
+}
+main > * {
+  width: 100%;
+  padding: 1rem;
+}
+.balances {
+  position: relative;
+  color: white;
+  justify-content: space-between;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 15px;
+  font-size: 12px;
+}
+.balances .right {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 2px hsl(25, 47%, 15%);
+  background-color: hsl(25, 47%, 15%);
+}
+.balances .right::before {
+  transform: translate(-50%, -1.5px);
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 2px hsl(27, 66%, 92%);
+}
+.myBalance {
+  margin-top: 0.2rem !important;
+  font-weight: bold;
+  font-size: 20px;
+}
+.details {
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 15px;
+}
+.details > p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.details ul {
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+.spending {
+  justify-content: space-between;
+  font-size: 12px;
+}
+.mySpending {
+  font-weight: bold;
+  font-size: 28px;
+}
+.diffLastMonth {
+  text-align: right;
+  font-weight: bold;
+}
+
+@media all and (max-height: 500px) {
+  body {
+    height: auto;
+  }
+}
